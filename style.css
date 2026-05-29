@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --cor-primaria: rgb(34, 187, 234);
+    --cor-texto: white;
+}
+
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+    padding-top: 130px; 
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 180px; 
+}
+
+/* Barra de Navegação */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    color: var(--cor-texto);
+    font-weight: bold;
+    background: rgba(13, 13, 13, 0.95);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    transition: 0.3s;
+}
+
+.logo {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+
+    text-decoration: none;
+    color: var(--cor-texto);
+    transition: 0.3s;
+}
+
+/* seção da home */
+
+.secao-home {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: var(--cor-texto);
+    font-weight: 500;
+    padding: 10%;
+}
+
+.secao-home h1 {
+    font-size: 4rem;
+    color: var(--cor-texto);
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.secao-home p {
+    font-size: 2rem;
+    color: var(--cor-primaria);
+    margin: 0 auto 15px auto;
+    line-height: 1.2;
+    font-weight: 550;
+    margin: 30px 0;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px; 
+}
+
+.home-texto {
+    flex: 1.2; 
+}
+
+.img-home {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* seção de funcionalidades */
+
+.funcionalidades-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 10%;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.secao-funcionalidades {
+    padding-top: 80px;
+}
+
+.secao-funcionalidades h1 {
+    width: 100%;
+    text-align: center;
+    color: var(--cor-texto);
+    margin-top: 80px;
+    padding: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.sub-secao {
+    text-align: center;
+    color: var(--cor-texto);
+    margin-top: 20px;
+}
+
+.textos-coluna {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.inside-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--cor-texto);
+}
+
+.titulo-funcionalidade {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.icon-funcionalidades {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.texto-func h2 {
+    color: var(--cor-primaria);
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.texto-func p {
+    font-size: 1rem;
+    color: var(--cor-texto);
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.imagem {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+
+}
+
+/* seção de tecnologia */
+
+.titulo-secao {
+    width: 100%;
+    text-align: center;
+    color: var(--cor-texto);
+    margin-top: 80px ;
+    padding: 50px;
+    font-size: 2.5rem;
+}
+
+.secao-tecnologia {
+    padding-bottom: 80px;
+}
+
+.tecnologia-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 10%;
+    gap: 80px;
+}
+
+.imagem-tech {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-tech img {
+    width: 100%;
+    max-width: 450px;
+}
+
+/* seção de objetivo */
+
+.secao-objetivo {
+    padding-bottom: 80px;
+}
+
+.objetivo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 30px;
+    padding: 0 10%;
+}
+
+.obj-card {
+    background: rgba(255, 255, 255, 0.05); 
+    padding: 40px;
+    border-radius: 20px;
+    flex: 1;
+    min-width: 300px; 
+    max-width: 400px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.obj-card:hover {
+    transform: translateY(-10px);
+}
+
+.obj-card img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.obj-card h3 {
+    color: var(--cor-primaria);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.obj-card p {
+    color: var(--cor-texto);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* seção de sobre */
+
+.secao-sobre {
+    padding-bottom: 30px;
+}
+
+.sobre-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10%;
+    gap: 60px;
+}
+
+.sobre-texto {
+    color: var(--cor-texto);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.sobre-texto h2 {
+    color: var(--cor-primaria);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--cor-texto);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre-grupo {
+    flex: 1;
+}
+
+.card-grupo {
+    background: rgba(34, 187, 234, 0.05);
+    border: 1px solid var(--cor-primaria);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 320px;
+    display: flex;  
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-grupo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.card-grupo h3 {
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+.card-grupo img {
+    width: 25px;
+    height: auto;
+}
+
+.card-grupo ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.card-grupo ul li {
+    color: var(--cor-texto);
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* seção do quiz */
+
+.secao-quiz {
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 60px 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px;
+    transition: transform 0.3s ease;
+}
+
+.quiz-card:hover {
+    transform: translateY(-5px);
+}
+
+.quiz-card h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.quiz-card p {
+    color: var(--cor-texto);
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.btn-quiz {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: var(--cor-primaria);
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.btn-quiz:hover {
+    background-color: white;
+}
+
+/* seção de roda pé */
+
+footer {
+    background: #0f0f0f;
+    padding: 50px 10%;
+    text-align: center;
+    color: rgb(116, 116, 116);
+}
+
+.integrantes span {
+    border-right: 1px solid #333;
+    padding-right: 10px;
+    padding-left: 10px;
+}
