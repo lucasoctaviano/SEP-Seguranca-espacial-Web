@@ -72,3 +72,26 @@ body {
     border-color: var(--cor-primaria);
     background: rgba(10, 54, 68, 0.05);
 }
+
+.botao-quiz {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 30px;
+    align-self: center;
+    display: flex;
+    color: var(--cor-texto);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.botao-quiz:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--cor-primaria);
+    translate: -2px -2px;
+}
+
+.botao-quiz:active {
+    translate: 2px 2px;
+}
