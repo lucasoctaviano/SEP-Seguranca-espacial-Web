@@ -11,6 +11,9 @@ formulario.addEventListener("submit", function(evento) {
         "SEGURANÇA ORBITAL",
         "PYTHON",
         "TEMPO REAL",
+        "EMPRESA AEROESPACIAIS",
+        "EDGE COMPUTING",
+        "SUSTENTABILIDADE",
     ];
 
     let resposta = document.querySelectorAll(".resposta");
